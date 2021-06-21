@@ -3,18 +3,14 @@
 # 保存先のディレクトリ
 cd ~/Music
 
-while :
+# DLしたい動画のurlのリスト
+file=~/Documents/url.txt
+
+cat $file | while read url
+
 do
-
-	if [ "$url" = "Q" ]; then
-		echo "入力を終了" 
-		break
-
-	else
-
-		# URL 
-		read -p "URL > " "url"
-
-		youtube-dl -x --audio-format mp3 $url
-	fi
+	youtube-dl -x --audio-format mp3 -o "%(title)s.%(ext)s" $url
+	sleep 2
 done
+
+exit 0
