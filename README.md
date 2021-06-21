@@ -1,1 +1,2 @@
 # youtubedl_mp3
+youtube-dlを用いてyoutube上の動画をmp3に変換してダウンロード
