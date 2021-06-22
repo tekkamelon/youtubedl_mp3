@@ -7,21 +7,21 @@ youtube-dlを用いてyoutube上の動画をmp3に変換してダウンロード
 # githubよりclone
 $ git clone https://github.com/tekkamelon/youtubedl_mp3
 
-# homeディレクトリに保存用のディレクトリの作成
-$ mkdir ~/Documents/library
+# urlの記載されたファイルの作成,一行ずつurlを入力
+$ touch ~/Documents/url.txt
 
 # スクリプトのあるディレクトリへ移動
-$ cd book_manager/book_manager/
+$ cd youtubedl_mp3/youtubedl_mp3/
 
 # 実行権限を付与
-$ chmod 755 book_manager.sh
+$ chmod 755 youtubedl_mp3.sh
 ```
 
 ## hot to use
 
 ```sh
 # スクリプトを起動
-$ ./book_manager.sh
+$ ./youtubedl_mp3.sh
 ```
-実行すると"~/Documents/url.txt"に記載されたurlを一行ずつ読み込み
-DLしたファイルを"~/Music"ディレクトリに保存
+実行すると~/Documents/url.txtに記載されたurlを一行ずつ読み込み
+DLしたファイルを~/Musicディレクトリに保存
