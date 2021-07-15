@@ -5,7 +5,7 @@ youtube-dlを用いてyoutube上の動画をmp3に変換してダウンロード
 
 ```sh
 # debian系ディストリビューション
-$ sudo fapt install -y aria2 python3-pkg-resources python3 ffmpeg && sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl 
+$ sudo apt install -y aria2 python3-pkg-resources python3 ffmpeg && sudo wget https://yt-dl.org/latest/youtube-dl -O /usr/local/bin/youtube-dl 
 
 # 実行権限の付与
 $ sudo chmod a+x /usr/local/bin/youtube-dl hash -r
